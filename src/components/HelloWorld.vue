@@ -40,6 +40,7 @@ export default {
   },
   methods: {
     test() {
+      return 0
     },
   },
 };

@@ -9,4 +9,15 @@ describe('HelloWorld.vue', () => {
     });
     expect(wrapper.text()).toMatch(msg);
   });
+
+  describe('test method', () => {
+    it('returns 0', () => {
+      const msg = 'new message';
+      const wrapper = shallowMount(HelloWorld, {
+        propsData: { msg },
+      });
+
+      expect(wrapper.vm.test()).toEqual(0);
+    });
+  });
 });
