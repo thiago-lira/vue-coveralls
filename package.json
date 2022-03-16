@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "test:unit:coveralls": "npm run test:unit -- --coverage --collectCoverageFrom=src/**/*.{js,vue}"
+    "test:unit:coveralls": "npm run test:unit"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -28,10 +28,5 @@
     "vue-template-compiler": "^2.6.11"
   },
   "jest": {
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.{js,vue}",
-      "!src/main.js"
-    ]
   }
 }

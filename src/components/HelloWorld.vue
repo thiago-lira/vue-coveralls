@@ -38,6 +38,10 @@ export default {
   props: {
     msg: String,
   },
+  methods: {
+    test() {
+    },
+  },
 };
 </script>
 
